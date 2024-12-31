@@ -1,0 +1,172 @@
+@font-face{
+    font-family: 'Rechtman';
+    src: url('fonts/Rechtman/RechtmanPlain.ttf') format('ttf'),
+         url('fonts/Rechtman/RechtmanPlain.ttf') format('woff');
+}
+
+@font-face{
+    font-family: 'Gondola-SD';
+    src: url('fonts/Gondola-SD/Gondola_SD-Swash.ttf') format('ttf'),
+         url('fonts/Gondola-SD/Gondola_SD.ttf') format('woff');
+}
+
+@font-face{
+    font-family: 'Clutchee';
+    src: url('fonts/Clutchee/clutchee.otf') format('ttf'),
+         url('fonts/Clutchee/clutchee.otf') format('woff');
+}
+
+@font-face{
+    font-family: 'sofia';
+    src: url('fonts/sofia/Sofia-Regular.otf') format('otf'),
+         url('fonts/sofia/Sofia-Regular.otf') format('woff');
+}
+
+* {
+    margin: 0px;
+    padding: 3px;
+}
+
+body {
+    background-color: #0000;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation, .footer {
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.footer{
+    padding-bottom: 20px;
+    margin-top: auto;
+}
+
+.navigation button {
+    font-family: Clutchee;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 0.7;
+    border-radius: 5px;
+    border-bottom: none;
+    font-size: large;
+    background-color: #f2f2f2;
+}
+
+.content-container {
+    width: 80vw;
+    padding: 30px;
+    margin: auto;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border: 0.1px rgba(232, 232, 236, 0.5) solid;
+    text-align: center;
+    border-radius: 8px;
+    background-image: linear-gradient(to right, white, rgba(230, 228, 228, 0.848));
+    opacity: 90%;
+}
+
+.menu-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.home-header{
+    font-family: 'Gondola-SD';
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.home-header img{
+    min-width: 300px;
+    max-height: auto;
+    border-radius: 5%;
+    margin-bottom: 10px;
+}
+.main-menu, .side-menu, .dessert-menu {
+    padding: 10px;
+    flex: 0 1 auto;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px;
+    margin-bottom: auto;
+}
+
+.single-menu {
+    box-sizing: border-box;
+    padding: 10px;
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    box-decoration-break: slice;
+    box-shadow: 0 0 5px rgb(16, 165, 224);
+    min-height: 450px;
+    background-image: linear-gradient(to left, white, white, rgb(207, 205, 205));
+
+}
+
+img {
+    max-width: 250px ;
+    max-height: 200px;
+    border-radius: 20% 70%;
+}
+
+p {
+    font-family: sofia;
+    max-width: 300px;
+    font-size: large;
+    text-align: center;
+}
+
+h4{
+    font-family: Rechtman;
+    font-size: x-large;
+    box-shadow: 0 0 2px rgb(81, 81, 180), 2px 2px inset grey;
+    border-radius: 1px 8px;
+    margin-bottom: 15px;
+}
+
+h5{
+    font-size:small;
+    box-shadow: 0 0 2px rgb(81, 81, 180), 2px 2px inset grey;
+    border-radius: 1px 8px;
+    margin-bottom: 15px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: 30px;
+    width: 50px;
+}
+
+h2{
+    font-family: "Gondola-SD";
+}
